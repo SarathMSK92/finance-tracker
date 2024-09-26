@@ -1,0 +1,89 @@
+.expense-tracker-root {
+  .expense-tracker-card-container {
+    margin: 20px;
+
+    .expense-head-title {
+      font-size: 25px;
+      font-weight: 500;
+      border-bottom: 2px solid lightgray;
+      padding-bottom: 20px;
+    }
+
+    .expense-tracker-all-cards-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      margin: 20px;
+
+      .add-expense-section {
+        color: black;
+        margin-top: 18px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        outline: none;
+
+        .add-expense-btn {
+          font-size: 20px;
+          border-radius: 6px;
+          background-color: rgb(75, 121, 247);
+          color: #fff;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          width: 150px;
+          height: 60px;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .income-section,
+      .expense-section,
+      .debt-section,
+      .wallet-section {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        width: 180px;
+        height: 50px;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        .card-header-text {
+          font-weight: 500;
+          font-size: 18px;
+        }
+        .card-value-text {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .expense-tracker-form-container {
+    margin: 20px 63px;
+
+    .expense-tracker-form {
+      .expense-tracker-form-categories {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        .main-category-section,
+        .sub-category-section {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .category-text {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
